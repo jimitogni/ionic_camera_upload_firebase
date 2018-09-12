@@ -1,0 +1,7 @@
+{
+  "name": "ionic-s3-image-upload",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

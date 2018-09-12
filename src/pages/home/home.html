@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      FireBase Upload
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div *ngIf="image">
+    <img src="{{image}}" style="width: 100%; border-radius: 14px" />
+  </div>
+
+  <button ion-button block round outline color="dark" (click)="opcoes()" icon-start>
+    <ion-icon name="camera"></ion-icon>
+    Adicionar foto
+  </button>
+
+  <br>
+
+  <button ion-button block round outline color="primary" (click)="uploadImg()" icon-start [disabled]="!image">
+    <ion-icon name="cloud-upload"></ion-icon>
+    Uploadar
+  </button>
+
+</ion-content>
